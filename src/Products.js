@@ -6,8 +6,12 @@ const DisplayProducts = (props)=>{
     const rows = products.map((product,index)=>{
         return (
             <div key={index} className="product">
-                <img src={OIP} alt="Lap Image" className="img" />
-                <p>{product.productName}</p>
+                <div className="imgDiv">
+                    <img src={OIP} alt="Lap Image" className="img" />
+                </div>
+                <div className="product_details">
+                    <p className="details">{product.productName}</p>
+                </div>
             </div>
         )
     });
